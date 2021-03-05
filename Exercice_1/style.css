@@ -1,0 +1,39 @@
+.carre{
+  width:100px;
+	height:100px;
+	background:green;
+  border: solid;
+}
+.rectangle{
+  width: 400px;
+  height: 100px;
+  background: yellow;
+}
+.container{
+  display: flex;
+}
+.green{
+  display: flex;
+}
+.yellow{
+  display: flex;
+  /*flex-grow indique la largeur de l'élément*/
+  flex-grow: 0.2;
+}
+@media screen and (max-width: 980px){
+  .container{
+    background: lightgray;
+    flex-direction: column;
+  }
+  .green{
+    display: flex;
+    justify-content: space-between;
+  }
+  .carre{
+  background: lightgreen;
+  width: 150px;
+  }
+  .rectangle{
+    flex-grow: 4;
+  }
+}

@@ -1,0 +1,50 @@
+.container{
+  height: 190px;
+  width: 100%;
+  border: solid blue;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.rectangle{
+  width: 14%;
+  height: 30%;
+  background: lightblue;
+  border: 1px solid blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*pour les tablette*/
+@media (min-width: 768px) and (max-width: 1024px) {
+/* Styles pour cette Media Queries */
+  .container{
+    border: solid pink;
+    flex-wrap: wrap;
+  }
+  .rectangle{
+    width: 30%;
+  }
+}
+/*pour mobile*/
+@media (min-width: 321px) and (max-width: 767px){
+  .container{
+    border: solid green;
+    flex-wrap: wrap;
+  }
+  .rectangle{
+    width: 40%;
+  }
+}
+/*pour les mobiles de petites tailles*/
+@media (max-width: 320px){
+  .container{
+    border: solid red;
+    height: 50%;
+    flex-wrap: wrap;
+  }
+  .rectangle{
+    width: 50%;
+    height: 10%;
+  }
+}
